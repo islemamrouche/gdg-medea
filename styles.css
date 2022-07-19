@@ -7,11 +7,20 @@ nav{
   }
 
 
-.male{
+.male-box{
     margin: 8px 0px;
     box-shadow:0px 0px 5px 2px #638ddb;
 }
-.female{
+.female-box{
     margin: 8px 0px;
     box-shadow:0px 0px 5px 2px #e71589;
+}
+.male-font{
+    color:#638ddb;
+}
+.female-font{
+    color:#e71589;
+}
+.star{
+    color: rgb(196, 196, 0);
 }
