@@ -37,7 +37,7 @@
                         <a class="nav-link" href="#events">Our Events</a>
                     </li>
                     <li class="nav-item">
-                        <a class="nav-link" href="#feedbacks">Feedbacks</a>
+                        <a class="nav-link" href="#feedback">Feedback</a>
                     </li>
                     <li class="nav-item">
                         <a class="nav-link" href="#getintouche">Get in Touch</a>
@@ -64,7 +64,7 @@
                         <div class="display-4">GDG MEDEA</div>
                         <div class="display-5 text-muted">Tech Club</div>
                     </h1>
-                    <p class="lead my-4 text-muted">Our mission is to help you enhance you overall tech knowledge</p>
+                    <p class="lead my-4 text-muted">Our mission is to help you enhance you overall tech skills</p>
                     <a href="#pricing" class="btn btn-secondary btn-lg">Join Now!</a>
                     <!-- open sidebar / offcanvas -->
                     <a href="#sidebar" class="d-block mt-3" data-bs-toggle="offcanvas" role="button"
@@ -198,10 +198,10 @@
     </section>
 
     <!-- reviews list -->
-    <section id="feedbacks">
+    <section id="feedback">
         <div class="container-lg">
             <div class="text-center">
-                <h2><i class="bi bi-stars"></i>Feedbacks</h2>
+                <h2><i class="bi bi-stars"></i>Feedback</h2>
                 <p class="lead">What our participants said about us ...</p>
                 <button class="btn btn-outline-primary" data-bs-toggle="modal" data-bs-target="#reg-modal">
                     Add a feedback
@@ -390,7 +390,7 @@
                                 </span>
                             </span>
                         </div>
-                        <label for="subject" class="form-label">Gender</label>
+                        <label for="subject" class="form-label">Gender:</label>
                         <div class="mb-4 input-group">
                             <span class="input-group-text">
                                 <i class="bi bi-gender-ambiguous text-secondary"></i>
@@ -402,7 +402,7 @@
                         </div>
                         <div class="mb-4 mt-5 form-floating">
                             <textarea class="form-control" id="query" placeholder="query"></textarea>
-                            <label for="query">Your query...</label>
+                            <label for="query">Your feedback...</label>
                         </div>
                         <hr>
                         <div class="text-center">
@@ -414,25 +414,51 @@
         </div>
     </div>
 
+    <!-- Footer -->
     <div class="container" id="findus">
-        <footer class="d-flex flex-wrap justify-content-between align-items-center py-3 my-4 border-top">
-            <div class="col-md-4 d-flex align-items-center">
-                <a href="/" class="mb-3 me-2 mb-md-0 text-muted text-decoration-none lh-1">
-                    <svg class="bi" width="30" height="24">
-                        <use xlink:href="#bootstrap" />
-                    </svg>
-                </a>
-                <span class="text-muted">&copy; 2022 GDG Medea</span>
+        <footer class="py-5">
+            <div class="row">
+                <div class="col-4">
+                    <h5>GDG Medea</h5>
+                    <p class="text-muted">Google Developers Group Medea is a tech club related to Google where you can
+                        find all sorts of tech Events, Trainings, Hackathons... and much more</p>
+                </div>
+
+                <div class="col-4">
+                    <h5>Find us</h5>
+                    <ul class="nav flex-column">
+                        <li class="nav-item mb-2 text-muted"><i class="bi bi-geo-alt-fill"></i> Address: CLS Medea</li>
+                        <li class="nav-item mb-2 text-muted"><i class="bi bi-telephone-fill"></i> Phone Number: 05 55 55 55 55</li>
+                        <li class="nav-item mb-2 text-muted"><i class="bi bi-envelope-fill"></i> Email: medeamedea350@gmail.com</li>
+                    </ul>
+                </div>
+
+                <div class="col-4">
+                    <form>
+                        <h5>Subscribe to our newsletter</h5>
+                        <p class="text-muted">Monthly digest of whats new and exciting from us.</p>
+                        <div class="d-flex w-100 gap-2">
+                            <label for="newsletter1" class="visually-hidden">Email address</label>
+                            <input id="newsletter1" type="text" class="form-control" placeholder="Email address">
+                            <button class="btn btn-primary" type="button">Subscribe</button>
+                        </div>
+                    </form>
+                </div>
+            </div>
+            <div class="container w-25 mt-4">
+                <div class="row justify-content-center">
+                    <div class="col-md-3"><a class="link-dark" href="https://web.facebook.com/GDG.Medea26"
+                            target="_blank"><i class="bi bi-facebook fs-3"></i></a></div>
+                    <div class="col-md-3"><a class="link-dark" href="https://www.instagram.com/gdg_medea/"
+                            target="_blank"><i class="bi bi-instagram fs-3"></i></a></div>
+                    <div class="col-md-3"><a class="link-dark" href="https://github.com/islemamrouche"
+                            target="_blank"><i class="bi bi-github fs-3"></i></a></div>
+                </div>
             </div>
 
-            <ul class="nav col-md-4 justify-content-end list-unstyled d-flex">
-                <li class="ms-3"><a class="text-muted" href="https://web.facebook.com/GDG.Medea26" target="_blank"><i
-                            class="bi bi-facebook"></i></a></li>
-                <li class="ms-3"><a class="text-muted" href="https://www.instagram.com/gdg_medea/" target="_blank"><i
-                            class="bi bi-instagram"></i></a></li>
-                <li class="ms-3"><a class="text-muted" href="https://github.com/islemamrouche" target="_blank"><i
-                            class="bi bi-github"></i></a></li>
-            </ul>
+            <div class="py-4 my-4 border-top text-center">
+                <p>&copy; 2022 GDG Medea. All rights reserved.</p>
+            </div>
         </footer>
     </div>
 
