@@ -264,10 +264,19 @@ $feed = $statement->fetchAll(PDO::FETCH_OBJ);
             <div class="row justify-content-center my-5">
             
                 <div class="col-lg-8">
-                <?php foreach($feed as $feeding): ?>
+                <?php foreach($feed as $feeding): ?> <?php $genree=$feeding->gender; //voila le genre ou tu dois l'utiliser pour changer la couleur ?>
+
+       
                     <div class="list-group">
-                        <div class="list-group-item py-3 male-box">
-                        
+                        <div id="gender" class="list-group-item py-3 male-box">
+                        <script>
+                    
+ var gender = "";
+ gender=<?php echo $genree; ?>;
+
+ if(gender==2){
+        document.getElementById('gender').className = "list-group-item py-3 female-box"; }
+        </script>
                             <div class="pb-2">
                                 <i class="bi bi-star-fill star"></i>
                                 <i class="bi bi-star-fill star"></i>
@@ -276,7 +285,7 @@ $feed = $statement->fetchAll(PDO::FETCH_OBJ);
                                 <i class="bi bi-star-fill star"></i>
                             </div>
                             <h5 class="mb-1 male-font"><?= $feeding->emotion; ?></h5>
-                            <p class="mb-1"><?= $feeding->feeback;   ?>     <?php $genree=$feeding->gender; //voila le genre ou tu dois l'utiliser pour changer la couleur ?></p> 
+                            <p class="mb-1"><?= $feeding->feeback;   ?>     </p> 
                             <small><?= $feeding->fullname; ?>   </small>
                         </div>
                         <?php endforeach; ?>
@@ -451,8 +460,8 @@ $feed = $statement->fetchAll(PDO::FETCH_OBJ);
                                 <i class="bi bi-gender-ambiguous text-secondary"></i>
                             </span>
                             <select name="gender" class="form-select" id="subject">
-                                <option value="male" selected>Male</option>
-                                <option value="female">Female</option>
+                                <option value="1" selected>Male</option>
+                                <option value="2">Female</option>
                             </select>
                         </div>
                         <label for="name" class="form-label">Emotion:</label>
